@@ -33,6 +33,9 @@ const authRedu = (state = initState, action) => {
             }
             break
         case authConstants.LOGOUT_REQUEST:
+
+            localStorage.clear()
+
             state = {
                 ...initState
             }

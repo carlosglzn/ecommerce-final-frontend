@@ -29,7 +29,7 @@ function Signup() {
   const auth = useSelector(state => state.auth)
 
   if(auth.authenticate) {
-    return <Redirect to={`/`} />
+    return <Redirect to={`/signin`} />
   }
 
   if(user.loading) {
